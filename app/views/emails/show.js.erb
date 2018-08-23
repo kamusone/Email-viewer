@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$('.emailcontent').hide({'background-color' : 'grey'}); //affiche uniquement le contenu du mail selectionné et n'affiche pas le contenu du mail precedent
+	$('.read').css({'color' : 'blue', 'background-color': 'white'}); //reprend la couleur same background /text color aprés avoir passé au mail suivant
+	$('#mail_<%=@email.id%>').slideDown(); //display animation, affiche le contenu du mail
+
+
+	$('#object_<%=@email.id%> a').css({'color' : 'grey', 'font-weight':'normal'}); //pour le "read status" affichage normal (non gras)
+	$('#object_<%=@email.id%>').css({'background-color' : 'yellow', 'color':'grey'}); // background object pendant la selection
+	// $('#object_<%=@email.id%>').attr('class','read'); // gives the tab the class "read"
+
+});
