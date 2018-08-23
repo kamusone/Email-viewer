@@ -6,6 +6,6 @@ $(document).ready(function(){
 
 	$('#object_<%=@email.id%> a').css({'color' : 'grey', 'font-weight':'normal'}); //pour le "read status" affichage normal (non gras)
 	$('#object_<%=@email.id%>').css({'background-color' : 'yellow', 'color':'grey'}); // background object pendant la selection
-	// $('#object_<%=@email.id%>').attr('class','read'); // gives the tab the class "read"
+	$('#object_<%=@email.id%>').attr('class','read'); // gives the tab the class "read"
 
 });

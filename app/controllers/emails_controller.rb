@@ -18,14 +18,14 @@ class EmailsController < ApplicationController
   end
 
 
-#declare var that will be used in 4 functions
-#   private
-#   def all_emails
-#       @emails = Email.all
-#     end
-#
-#     def set_emails
-#       @email = Email.find(params[:id])
-# 		end
-#
-# end
+# declare var that will be used in 4 functions
+  private
+  def all_emails
+      @emails = Email.all
+    end
+
+    def set_emails
+      @email = Email.find(params[:id])
+		end
+
+end

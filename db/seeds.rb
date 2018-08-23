@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
-10.times do
+20.times do
   Email.create(
     object: Faker::BackToTheFuture.character,
     body: Faker::BackToTheFuture.quote
