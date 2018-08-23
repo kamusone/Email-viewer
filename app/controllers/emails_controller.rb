@@ -18,7 +18,7 @@ class EmailsController < ApplicationController
   end
 
 
-
+private 
   def all_emails
       @emails = Email.all
     end
