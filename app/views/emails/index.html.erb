@@ -5,7 +5,7 @@
 
     <!-- #######################################premiere col pour afficher les mails (<object)####################################-->
 
-		<div class="col-lg-offset-2 col-lg-2">
+		<div class="col-lg-offset-0 col-lg-2">
       <!-- creation de colonne LISTE object  -->
       <div class="col-left">
 
@@ -14,7 +14,7 @@
         <!-- entete du tableau -->
       	<tr>
 
-					<th>  Object - Mailbox <%= image_tag 'gmail.png' %> </th>
+					<th class="title1">  Boite de reception <%= image_tag 'gmail.png' %> </th>
 
 
 
@@ -39,12 +39,12 @@
 
     <!--#####################################deuxieme colonne (contenu) #######################################""-->
 
-		<div class="col-lg-6">
+		<div class="col-lg-10">
 			<table class="table table-striped">
         <!-- entete tableau content  -->
       	<tr>
 
-					<th><strong>content mail</strong></th>
+					<th class="title2">Content mail</th>
 
 				</tr>
 			</table>
@@ -59,10 +59,13 @@
               <!-- affiche content email -->
 							<p><%= email.body %></p>
               <!-- supression mail with AJAX -->
+              <div class="button">
+
+
 							<%= link_to email, remote: true, method: :delete, class: 'delete_email' , data: { confirm: 'Are you sure?' } do %>
   							<button><strong>Supprimer </strong></button>
 							<% end %>
-
+              </div>
 						</div>
 					</div>
 				<% end %>
