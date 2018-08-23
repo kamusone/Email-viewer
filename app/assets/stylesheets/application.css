@@ -1,0 +1,35 @@
+.title1{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+
+
+}
+.title2{
+  font-size: 40px;
+  margin: 40px;
+  font-weight: 600;
+  text-align: center;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button{
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #ff4e5c;
+  display:inline-block;
+  position: center;
+  opacity: 0.75;
+
+
+}
+.button:hover {
+  background: #ff3545;
+  opacity: 0.9;
+}
