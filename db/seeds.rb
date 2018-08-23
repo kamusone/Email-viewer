@@ -10,7 +10,7 @@ require 'faker'
 20.times do
   Email.create(
     object: Faker::BackToTheFuture.character,
-    body: Faker::BackToTheFuture.quote
+    body: Faker::Lorem.paragraph_by_chars
 
   )
 end

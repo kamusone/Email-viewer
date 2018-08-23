@@ -18,8 +18,7 @@ class EmailsController < ApplicationController
   end
 
 
-# declare var that will be used in 4 functions
-  private
+
   def all_emails
       @emails = Email.all
     end
