@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 # authentification
 #gem 'pundit'
 gem 'rails'
