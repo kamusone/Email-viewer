@@ -1,8 +1,8 @@
-#https://boite-mail.herokuapp.com/
+# https://boite-mail.herokuapp.com/
 
 Consulter le mail-Viewer en server local
 
-###procedure:
+### procedure:
 -bundle install --without production
 
 -rails db:migrate
